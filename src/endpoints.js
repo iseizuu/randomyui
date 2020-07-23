@@ -19,4 +19,4 @@ class randomyui {
     }
 
 }
-module.exports = randomyui;
+module.exports = randomyui
