@@ -1,0 +1,17 @@
+{
+  "name": "randomyuiz",
+  "version": "1.0.1",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nezumiyui"
+  ],
+  "author": "VeguiIzumi",
+  "license": "ISC",
+  "description": "Some anime apis, encode, and image filter",
+  "dependencies": {
+    "node-superfetch": "^0.1.10"
+  }
+}
