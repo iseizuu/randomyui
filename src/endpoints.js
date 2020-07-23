@@ -7,10 +7,10 @@ class randomyui {
         if(!list.find(a => a === choice.toLowerCase())) {
             return console.log('Please enter one of the following options :' + list.join(", "))
         }
-        const { body } = await fetch.get('https://nezumiyuiz.glitch.me/api/' + choice.toLowerCase())
-        const data = body.url;
+        const res = await fetch.get('https://nezumiyuiz.glitch.me/api/' + choice.toLowerCase())
+        const data = res.body.url;
 
-        if(data.code !== 200) {
+        if(res.status !== 200) {
             return console.log('Api is currently down')
         }
 
