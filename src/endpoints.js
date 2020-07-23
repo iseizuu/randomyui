@@ -2,9 +2,17 @@ const fetch = require('node-superfetch')
 
 class randomyui {
 
-    async imageZerotwo() {
-        const { body } = await fetch.get('https://nezumiyuiz.glitch.me/api/zerotwo')
-        const data = body.url
+    async animeImage(choice) {
+        const list = ['anime', 'chika', 'oyasumi', 'zerotwo'];
+        if(!list.find(a => a === choice.toLowerCase())) {
+            return console.log('Please enter one of the following options :' + list.join(", "))
+        }
+        const { body } = await fetch.get('https://nezumiyuiz.glitch.me/api/' + choice.toLowerCase())
+        const data = body.url;
+
+        if(data.code !== 200) {
+            return console.log('Api is currently down')
+        }
 
         return data;
 

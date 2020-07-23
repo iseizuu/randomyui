@@ -1,6 +1,6 @@
 {
   "name": "randomyuiz",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -13,5 +13,14 @@
   "description": "Some anime apis, encode, and image filter",
   "dependencies": {
     "node-superfetch": "^0.1.10"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VeguiIzumi/randomyui.git"
+  },
+  "bugs": {
+    "url": "https://github.com/VeguiIzumi/randomyui/issues"
+  },
+  "homepage": "https://github.com/VeguiIzumi/randomyui#readme"
 }
