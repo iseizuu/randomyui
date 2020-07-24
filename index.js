@@ -1,3 +1,3 @@
 module.exports = {
-    randomyui: require('./src//endpoints')
+    randomyuiz: require('./src//endpoints')
 }
