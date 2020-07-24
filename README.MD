@@ -39,9 +39,9 @@ startRendering()
 async function startRendering() {
     const { randomyuiz } = require("randomyuiz");
     let data = new randomyuiz;
-    let imges = await data.filterImage('sepia', msg.author.avatarURL({size: 2048, format: 'png'}));
+    let images = await data.filterImage('sepia', msg.author.avatarURL({size: 2048, format: 'png'}));
 
-    msg.cannel.send({ files: [{ attachment: images, name: 'sepia.png' }] }); //result
+    msg.channel.send({ files: [{ attachment: images, name: 'sepia.png' }] }); //result
 }
 startRendering()
 ```
