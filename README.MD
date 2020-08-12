@@ -6,6 +6,7 @@
 ```sh
 # npm
 npm i randomyuiz
+yarn add randomyuiz
 ```
 
 ## Example Usage
